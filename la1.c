@@ -21,7 +21,7 @@ int main(int argc, char *argv[]){
 
         // print the average of the numbers
         printf("The average of the %hhu random numbers", sampleSize);
-        double average = total/sampleSize;
+        double average = sampleSize==0 ? 0 : total/sampleSize;
         printf(" is %f\n",average);
     }
 }
